@@ -11,9 +11,9 @@ const Navbar = () => {
   const navItems = [
     { label: "Accueil", href: "/" },
     { label: "Code Électoral", href: "/docs/Code_Electoral.pdf" },
-    { label: "Candidats", href: "#" },
-    { label: "Infos Hub", href: "#" },
-    { label: "Mon Bureau de Vote", href: "#" },
+    { label: "Candidats", href: "/candidats" },
+    { label: "Infos Hub", href: "/infos" },
+    { label: "Mon Bureau de Vote", href: "/trouver-bureau" },
   ];
 
   return (

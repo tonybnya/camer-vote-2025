@@ -6,7 +6,7 @@ const Home = () => {
     {
       icon: FileText,
       text: "Consulter le Code Électoral",
-      href: "/docs/Code_Electoral.pdf", // external PDF
+      href: "/docs/Code_Electoral.pdf",
       external: true,
       borderColor: "border-blue-500",
       textColor: "text-blue-600",
@@ -15,7 +15,7 @@ const Home = () => {
     {
       icon: Users,
       text: "Voir tous les Candidats",
-      href: "/candidats", // internal route
+      href: "/candidats",
       external: false,
       borderColor: "border-green-500",
       textColor: "text-green-600",
@@ -24,7 +24,7 @@ const Home = () => {
     {
       icon: MapPin,
       text: "Trouver Mon Bureau de Vote",
-      href: "/trouver-bureau", // internal route
+      href: "/trouver-bureau",
       external: false,
       borderColor: "border-gray-500",
       textColor: "text-gray-700",

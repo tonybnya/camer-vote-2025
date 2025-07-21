@@ -2,11 +2,11 @@ import { Building2 } from "lucide-react";
 
 const Footer = () => {
   const navigationLinks = [
-    "Accueil",
-    "Code Électoral",
-    "Candidats",
-    "Infos Hub",
-    "Mon Bureau de Vote",
+    { href: "/", label: "Accueil" },
+    { href: "/docs/Code_Electoral.pdf", label: "Code Électoral" },
+    { href: "/candidats", label: "Candidats" },
+    { href: "/infos", label: "Infos Hub" },
+    { href: "/trouver-bureau", label: "Mon Bureau de Vote" },
   ];
 
   const usefulLinks = [
@@ -37,10 +37,10 @@ const Footer = () => {
             {navigationLinks.map((link, index) => (
               <div key={index}>
                 <a
-                  href="#"
+                  href={link.href}
                   className="text-white/90 hover:text-white transition-colors"
                 >
-                  {link}
+                  {link.label}
                 </a>
               </div>
             ))}
@@ -90,10 +90,10 @@ const Footer = () => {
                 {navigationLinks.map((link, index) => (
                   <div key={index}>
                     <a
-                      href="#"
+                      href={link.href}
                       className="text-white/80 hover:text-white transition-colors text-sm"
                     >
-                      {link}
+                      {link.label}
                     </a>
                   </div>
                 ))}
