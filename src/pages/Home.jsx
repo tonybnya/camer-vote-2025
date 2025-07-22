@@ -34,7 +34,7 @@ const Home = () => {
 
   const renderButton = (button, isMobile = false) => {
     const IconComponent = button.icon;
-    const baseClasses = `bg-white border-2 ${button.borderColor} ${button.textColor} ${
+    const baseClasses = `bg-white border-1 ${button.borderColor} ${button.textColor} ${
       isMobile ? "py-4 px-6" : "py-8 px-6"
     } rounded-lg flex ${isMobile ? "flex-row space-x-2 justify-center" : "flex-col items-center space-y-3"} ${
       button.hoverColor
@@ -80,8 +80,9 @@ const Home = () => {
         {/* Mobile Layout */}
         <div className="md:hidden">
           {/* Hero Section */}
-          <div className="bg-gradient-to-r from-teal-600 to-blue-600 rounded-lg text-white p-8 mb-8 text-center">
-            <h1 className="text-2xl font-bold leading-tight">
+          {/* <div className="bg-gradient-to-r from-teal-600 to-blue-600 rounded-lg text-white p-8 mb-8 text-center"> */}
+          <div className="border-2 border-gray-300 shadow-inner rounded-lg text-white p-8 mb-8 text-center">
+            <h1 className="text-2xl text-black font-bold leading-tight">
               <span className="text-red-900 pb-4">CamerVote2025</span>
               <br />
               Plateforme d'information civique pour les élections
@@ -98,8 +99,9 @@ const Home = () => {
         {/* Desktop Layout */}
         <div className="hidden md:block">
           {/* Hero Section */}
-          <div className="bg-gradient-to-r from-teal-600 to-blue-600 rounded-lg text-white p-12 mb-12 text-center">
-            <h1 className="text-4xl font-bold leading-tight max-w-4xl mx-auto">
+          {/* <div className="bg-gradient-to-r from-black via-teal-600 to-black rounded-lg text-white p-12 mb-12 text-center"> */}
+          <div className="border-2 border-gray-300 shadow-inner rounded-lg text-white p-12 mb-12 text-center">
+            <h1 className="text-4xl text-black font-bold leading-tight max-w-4xl mx-auto">
               <span className="text-red-900">CamerVote2025</span>
               <br />
               Plateforme d'information civique pour les élections
@@ -131,7 +133,10 @@ const Home = () => {
             rel="noopener noreferrer"
             className="inline-block mt-4"
           >
-            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded cursor-pointer">
+            <button
+              type="button"
+              className="hover:text-white border focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 border-blue-500 text-blue-500 hover:bg-blue-500 cursor-pointer"
+            >
               Protège Ton Vote
             </button>
           </a>

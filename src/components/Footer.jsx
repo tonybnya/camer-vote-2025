@@ -12,6 +12,10 @@ const Footer = () => {
   const usefulLinks = [
     { href: "https://www.prc.cm/fr", label: "Présidence de la République" },
     {
+      href: "https://minat.gov.cm",
+      label: "Ministère de l'Administration Territoriale",
+    },
+    {
       href: "https://constitutional-council.com",
       label: "Cour Constitutionnelle",
     },
@@ -91,7 +95,7 @@ const Footer = () => {
                   <div key={index}>
                     <a
                       href={link.href}
-                      className="text-white/80 hover:text-white transition-colors text-sm"
+                      className="text-white/50 hover:text-white transition-colors text-sm"
                     >
                       {link.label}
                     </a>
@@ -109,7 +113,7 @@ const Footer = () => {
                     <a
                       href={link.href}
                       target="_blank"
-                      className="text-white/80 hover:text-white transition-colors text-sm"
+                      className="text-white/50 hover:text-white transition-colors text-sm"
                     >
                       {link.label}
                     </a>

@@ -21,7 +21,7 @@ const Navbar = () => {
       {/* Mobile Header */}
       <div className="md:hidden bg-white shadow-sm">
         <div className="flex items-center justify-between p-4">
-          <div className="bg-blue-600 text-white px-4 py-2 rounded font-semibold">
+          <div className="">
             <a href="/">
               <img
                 src="/img/vote.svg"
